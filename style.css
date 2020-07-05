@@ -1,0 +1,181 @@
+* {
+    background-color: black;
+    color: forestgreen;
+}
+
+header {
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+}
+
+#tagline{
+    font-size: 35px;
+}
+
+nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-item {
+    list-style: none; /*causes the bullet icons to disappear*/
+    float: left;
+    margin: 30px;
+}
+
+#nav-item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: forestgreen;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#get-started {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#customer-subscription input[type="email"] {
+    width: 100%;
+    padding: 6px;
+    margin: auto;
+    border-color: greenyellow;
+}
+
+#customer-subscription input[type="submit"] {
+    width: 60%;
+    padding: 6px;
+    margin: auto;
+    background-color: forestgreen;
+    border: 0;
+    color: greenyellow;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#customer-subscription input[type="submit"]:hover {
+    background-color: limegreen;
+    color: greenyellow;
+    font-weight: bolder;
+    transition: background-color 0.8s;
+}
+
+#customer-subscription input[type="email"]:hover {
+    border-color: forestgreen;
+}
+
+#features .feature-description {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+}
+
+#feature-oneliner {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+    width: 45vw;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+#how-works {
+    display: flex;
+    justify-content: center;
+    margin: 170px;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    padding: 0px 35px 40px 0px;
+    margin: 10px;
+    border-radius: 5px;
+    width: calc(100% / 3);
+    border-color: forestgreen;
+}
+
+.packages:hover {
+    border-color: yellowgreen;
+}
+
+#package-title {
+    background-color: forestgreen;
+    color: yellowgreen;
+}
+
+#package-outline {
+    list-style: none; /*causes the bullet icons to disappear*/
+}
+
+#package-points {
+    padding-top: 0px;
+}
+
+#footer {
+    padding-top: 50px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#footer-nav-item {
+    list-style: none;
+    margin: 20px;
+    float: left;
+}
+
+#footer-nav-item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: forestgreen;   
+}
+
+#copyright-footer {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 760px) {         /* when browser window gets smaller than 760px, increase height */
+    #features .feature-description {
+        height: 300px;
+    }
+}
